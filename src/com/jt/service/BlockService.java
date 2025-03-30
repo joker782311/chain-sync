@@ -43,12 +43,14 @@ public class BlockService {
     public List<Transactions> getBlockTxInfo(Long number){
         List<Transactions> transactionsList =new ArrayList<>();
         int randomNum = (int) (Math.random() * 10);
+        int txType = (int) (Math.random() * 4);
         for (int i = 0; i < randomNum; i++) {
             transactionsList.add(Transactions.builder()
                     .BlockHash(UuidUtils.randomUUID())
                     .BlockNumber((long) (number+i+1))
                     .FromAddress("")
                     .ToAddress("")
+                    .TxType(String.valueOf(txType)) //随机给个类型
                     .build());
         }
         return transactionsList;

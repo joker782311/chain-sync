@@ -1,6 +1,8 @@
 package com.jt;
 
 
+import com.jt.task.DepositTask;
+import com.jt.task.TaskStart;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -17,6 +19,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class Application {
 
     public static void main(String[] args) {
+
         SpringApplication.run(Application.class);
     }
 }

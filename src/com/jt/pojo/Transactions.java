@@ -31,7 +31,7 @@ public class Transactions {
 
     String LockTime;
 
-    String TxType;
+    String TxType; //0充值,1提现,2归集,3转冷
 
     String Version;
 
